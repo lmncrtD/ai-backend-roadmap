@@ -19,15 +19,16 @@ public class AnalyzerTransactions {
         String status = "";
 
         for (String item: args) {
-            if (Double.parseDouble(item) > 0) {
+            double value = Double.parseDouble(item);
+            if (value > 0) {
                 countIncome++;
-                income += Double.parseDouble(item);
+                income += value;
             }
-            else if (Double.parseDouble(item) < 0) {
+            else if (value < 0) {
                 countOutcome++;
-                outcome += Double.parseDouble(item) * -1;
+                outcome += value * -1;
             }
-            else if (Double.parseDouble(item) == 0) {
+            else {
                 countTech++;
             }
         }
