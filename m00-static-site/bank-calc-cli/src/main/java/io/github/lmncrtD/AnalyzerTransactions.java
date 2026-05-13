@@ -34,14 +34,14 @@ public class AnalyzerTransactions {
 
         if (income - outcome == 0) {
             status = "Нулевой";
-        } else if (countOutcome == 0) {
+        } else if (income - outcome > 0) {
             status = "Профицит";
-        } else if (countIncome == 0) {
+        } else if (income - outcome < 0) {
             status = "Дефицит";
         }
 
         System.out.printf(
-                "%nОбработано записей: %d %nДоходов: %d на сумму %f %nРасходов: %d на сумму %f %nПропущено: %d%n%nБаланс: %f %nСтатус: %s%n",
+                "%nОбработано записей: %d %nДоходов: %d на сумму %.2f %nРасходов: %d на сумму %.2f %nПропущено: %d%n%nБаланс: %.2f %nСтатус: %s%n",
                 countAll,
                 countIncome,
                 income,
