@@ -34,9 +34,9 @@ public class AnalyzerTransactions {
 
         if (income - outcome == 0) {
             status = "Нулевой";
-        } else if (income - outcome > 0) {
+        } else if (countOutcome == 0) {
             status = "Профицит";
-        } else if (income - outcome < 0) {
+        } else if (countIncome == 0) {
             status = "Дефицит";
         }
 
