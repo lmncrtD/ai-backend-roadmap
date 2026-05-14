@@ -16,14 +16,17 @@ public class TransactionsAnalyzer {
             values[i] = parseAmount(args[i]);
         }
 
+        double income = calculateIncome(values);
+        double outcome = calculateOutcome(values);
+
         printResult(
                 countAll,
-                calculateIncome(values),
-                calculateOutcome(values),
+                income,
+                outcome,
                 countIncome(values),
                 countOutcome(values),
                 countTech(values),
-                definitionClass(calculateIncome(values), calculateOutcome(values))
+                definitionClass(income, outcome)
         );
 
     }
