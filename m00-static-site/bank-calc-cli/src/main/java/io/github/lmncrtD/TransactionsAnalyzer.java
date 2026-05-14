@@ -1,7 +1,7 @@
 package io.github.lmncrtD;
 
-public class AnalyzerTransactions {
-    static void main(String[] args) {
+public class TransactionsAnalyzer {
+    public static void main(String[] args) {
      /*
      1. Сколько всего записей обработано.
      2. Сколько среди них доходов, на какую общую сумму.
