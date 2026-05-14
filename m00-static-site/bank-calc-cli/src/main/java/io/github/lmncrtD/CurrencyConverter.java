@@ -1,9 +1,7 @@
 package io.github.lmncrtD;
 
-import java.math.BigDecimal;
-
 public class CurrencyConverter {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         double rub = Double.parseDouble(args[0]);
         double usd = Double.parseDouble(args[1]);
         double eur = Double.parseDouble(args[2]);
